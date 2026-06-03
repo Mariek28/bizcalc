@@ -73,6 +73,7 @@ function Footer() {
               <li><a href="/calculators/quarterly-tax/" className="hover:text-white transition-colors">Quarterly Estimated Tax</a></li>
               <li><a href="/calculators/employee-vs-contractor/" className="hover:text-white transition-colors">Employee vs Contractor</a></li>
               <li><a href="/calculators/break-even/" className="hover:text-white transition-colors">Break-Even Calculator</a></li>
+              <li><a href="/calculators/pto-accrual/" className="hover:text-white transition-colors">PTO Accrual Calculator</a></li>
               {/* ADD NEW CALCULATORS HERE */}
             </ul>
           </div>

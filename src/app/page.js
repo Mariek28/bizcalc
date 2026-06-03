@@ -71,7 +71,7 @@ const calculators = [
         <path d="M9 15l2 2 4-4" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
   {
     title: 'Break-Even Calculator',
