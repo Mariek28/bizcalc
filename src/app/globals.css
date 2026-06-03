@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,400&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-body text-slate-700 bg-slate-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-slate-900;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .calc-input {
+    @apply w-full px-4 py-3 rounded-lg border border-slate-300 bg-white
+           font-body text-slate-800 text-base
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500
+           transition-all duration-200;
+  }
+
+  .calc-select {
+    @apply w-full px-4 py-3 rounded-lg border border-slate-300 bg-white
+           font-body text-slate-800 text-base appearance-none
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500
+           transition-all duration-200
+           bg-no-repeat bg-right;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-position: right 12px center;
+    padding-right: 40px;
+  }
+
+  .calc-label {
+    @apply block text-sm font-medium text-slate-600 mb-1.5 font-heading;
+  }
+
+  .calc-button {
+    @apply w-full py-3.5 px-6 rounded-lg font-heading font-bold text-white text-lg
+           bg-brand-600 hover:bg-brand-700 active:bg-brand-800
+           focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2
+           transition-all duration-200 cursor-pointer
+           shadow-md hover:shadow-lg;
+  }
+
+  .calc-button-secondary {
+    @apply w-full py-2.5 px-4 rounded-lg font-heading font-medium text-brand-700 text-sm
+           bg-brand-50 hover:bg-brand-100 active:bg-brand-200 border border-brand-200
+           focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2
+           transition-all duration-200 cursor-pointer;
+  }
+
+  .result-card {
+    @apply bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden;
+  }
+
+  .ad-slot {
+    @apply w-full bg-slate-100 border border-dashed border-slate-300 rounded-lg
+           flex items-center justify-center text-slate-400 text-xs font-mono;
+    min-height: 90px;
+  }
+
+  .page-section {
+    @apply py-8 sm:py-12;
+  }
+}
+
+/* Print styles for calculator results */
+@media print {
+  header, footer, .ad-slot, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}
