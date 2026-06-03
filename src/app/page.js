@@ -83,7 +83,7 @@ const calculators = [
         <path d="M7 17l4-8 4 4 5-9" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
 ];
 
