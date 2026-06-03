@@ -47,7 +47,7 @@ const calculators = [
   },
   {
     title: 'Quarterly Estimated Tax',
-    description: 'Calculate federal and state quarterly estimated tax payments for self-employed individuals and LLC owners.',
+    description: 'Calculate federal quarterly estimated tax payments for self-employed individuals and LLC owners.',
     href: '/calculators/quarterly-tax/',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -57,7 +57,7 @@ const calculators = [
         <path d="M8 2v4" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
   {
     title: 'PTO Accrual Calculator',

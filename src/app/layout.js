@@ -70,6 +70,7 @@ function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="/calculators/payroll-tax/" className="hover:text-white transition-colors">Payroll Tax Calculator</a></li>
               <li><a href="/calculators/overtime-pay/" className="hover:text-white transition-colors">Overtime Pay Calculator</a></li>
+              <li><a href="/calculators/quarterly-tax/" className="hover:text-white transition-colors">Quarterly Estimated Tax</a></li>
               {/* ADD NEW CALCULATORS HERE */}
             </ul>
           </div>
