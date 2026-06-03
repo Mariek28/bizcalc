@@ -43,7 +43,7 @@ const calculators = [
         <path d="M16 3.13a4 4 0 010 7.75" />
       </svg>
     ),
-    available: false,
+    available: true,
   },
   {
     title: 'Quarterly Estimated Tax',

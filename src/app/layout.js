@@ -71,6 +71,7 @@ function Footer() {
               <li><a href="/calculators/payroll-tax/" className="hover:text-white transition-colors">Payroll Tax Calculator</a></li>
               <li><a href="/calculators/overtime-pay/" className="hover:text-white transition-colors">Overtime Pay Calculator</a></li>
               <li><a href="/calculators/quarterly-tax/" className="hover:text-white transition-colors">Quarterly Estimated Tax</a></li>
+              <li><a href="/calculators/employee-vs-contractor/" className="hover:text-white transition-colors">Employee vs Contractor</a></li>
               {/* ADD NEW CALCULATORS HERE */}
             </ul>
           </div>
